@@ -1,0 +1,509 @@
+:root{
+    --lightgray:#f7f7f7;
+    --gray: #869791;
+    --darkgray:#1c1c1c;
+}
+/* Global styles */
+i{
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+}
+.w-70px{
+    width: 70px;
+}
+.h-50{
+    height: 50px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat", sans-serif;
+}
+/* navbar */
+.nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: var(--darkgray);
+    -webkit-transition: width 500ms ease-in-out;
+    -o-transition: width 500ms ease-in-out;
+    transition: width 500ms ease-in-out;
+}
+.nav-link.active::after{
+    width: 100%;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fw-500{
+    font-weight: 500;
+}
+/* home */
+.home{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))), url(../images/imgs/bg.jpg);
+    background-image: -o-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/imgs/bg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/imgs/bg.jpg);
+    background-size: cover;
+}
+.home h3::after{
+    content: ' |';
+    margin-left: 2px;
+    -webkit-animation: typing 6s infinite;
+            animation: typing 6s infinite;
+}
+@-webkit-keyframes typing {
+    0%{content: ' L|';}
+    1.5%{content: ' La|';}
+    3%{content: ' Lar|';}
+    4.5%{content: ' Larr|';}
+    6%{content: ' Larry|';}
+    7.5%{content: ' Larry |';}
+    9%{content: ' Larry D|';}
+    10.5%{content: ' Larry Da|';}
+    12%{content: ' Larry Dan|';}
+    13.5%{content: ' Larry Dani|';}
+    15%{content: ' Larry Danie|';}
+    16.5%{content: ' Larry Daniel|';}
+    18%{content: ' Larry Daniels|';}
+    19.5%{content: ' Larry Daniel|';}
+    21%{content: ' Larry Danie|';}
+    22.5%{content: ' Larry Dani|';}
+    24%{content: ' Larry Dan|';}
+    25.5%{content: ' Larry Da|';}
+    27%{content: ' Larry D|';}
+    28.5%{content: ' Larry |';}
+    30%{content: ' Larry|';}
+    31.5%{content: ' Larr|';}
+    33%{content: ' Lar|';}
+    34.5%{content: ' La|';}
+    35.5%{content: ' L|';}
+    37%{content: ' |';}
+    38.5%{content: ' D|';}
+    40%{content: ' De|';}
+    41.5%{content: ' Dev|';}
+    43%{content: ' Deve|';}
+    44.5%{content: ' Devel|';}
+    46%{content: ' Develo|';}
+    47.5%{content: ' Develop|';}
+    49%{content: ' Develope|';}
+    50.5%{content: ' Developer|';}
+    52%{content: ' Develope|';}
+    53.5%{content: ' Develop|';}
+    55%{content: ' Develo|';}
+    56.5%{content: ' Devel|';}
+    58%{content: ' Deve|';}
+    59.5%{content: ' Dev|';}
+    61%{content: ' De|';}
+    62.5%{content: ' D|';}
+    64%{content: ' |';}
+    65.5%{content: ' D|';}
+    67%{content: ' De|';}
+    68.5%{content: ' Des|';}
+    70%{content: ' Desi|';}
+    71.5%{content: ' Desig|';}
+    73%{content: ' Design|';}
+    74.5%{content: ' Designe|';}
+    76%{content: ' Designer|';}
+    77.5%{content: ' Designer |';}
+    79%{content: ' Designer|';}
+    80.5%{content: ' Designe|';}
+    82%{content: ' Design|';}
+    83.5%{content: ' Desig|';}
+    85%{content: ' Desi|';}
+    86.5%{content: ' Des|';}
+    88%{content: ' De|';}
+    89.5%{content: ' D|';}
+    91%{content: ' |';}
+    92.5%{content: ' |';}
+    94%{content: ' |';}
+    95.5%{content: ' |';}
+    97%{content: ' |';}
+    98.5%{content: ' |';}
+    100%{content: ' |';}
+}
+@keyframes typing {
+    0%{content: ' L|';}
+    1.5%{content: ' La|';}
+    3%{content: ' Lar|';}
+    4.5%{content: ' Larr|';}
+    6%{content: ' Larry|';}
+    7.5%{content: ' Larry |';}
+    9%{content: ' Larry D|';}
+    10.5%{content: ' Larry Da|';}
+    12%{content: ' Larry Dan|';}
+    13.5%{content: ' Larry Dani|';}
+    15%{content: ' Larry Danie|';}
+    16.5%{content: ' Larry Daniel|';}
+    18%{content: ' Larry Daniels|';}
+    19.5%{content: ' Larry Daniel|';}
+    21%{content: ' Larry Danie|';}
+    22.5%{content: ' Larry Dani|';}
+    24%{content: ' Larry Dan|';}
+    25.5%{content: ' Larry Da|';}
+    27%{content: ' Larry D|';}
+    28.5%{content: ' Larry |';}
+    30%{content: ' Larry|';}
+    31.5%{content: ' Larr|';}
+    33%{content: ' Lar|';}
+    34.5%{content: ' La|';}
+    35.5%{content: ' L|';}
+    37%{content: ' |';}
+    38.5%{content: ' D|';}
+    40%{content: ' De|';}
+    41.5%{content: ' Dev|';}
+    43%{content: ' Deve|';}
+    44.5%{content: ' Devel|';}
+    46%{content: ' Develo|';}
+    47.5%{content: ' Develop|';}
+    49%{content: ' Develope|';}
+    50.5%{content: ' Developer|';}
+    52%{content: ' Develope|';}
+    53.5%{content: ' Develop|';}
+    55%{content: ' Develo|';}
+    56.5%{content: ' Devel|';}
+    58%{content: ' Deve|';}
+    59.5%{content: ' Dev|';}
+    61%{content: ' De|';}
+    62.5%{content: ' D|';}
+    64%{content: ' |';}
+    65.5%{content: ' D|';}
+    67%{content: ' De|';}
+    68.5%{content: ' Des|';}
+    70%{content: ' Desi|';}
+    71.5%{content: ' Desig|';}
+    73%{content: ' Design|';}
+    74.5%{content: ' Designe|';}
+    76%{content: ' Designer|';}
+    77.5%{content: ' Designer |';}
+    79%{content: ' Designer|';}
+    80.5%{content: ' Designe|';}
+    82%{content: ' Design|';}
+    83.5%{content: ' Desig|';}
+    85%{content: ' Desi|';}
+    86.5%{content: ' Des|';}
+    88%{content: ' De|';}
+    89.5%{content: ' D|';}
+    91%{content: ' |';}
+    92.5%{content: ' |';}
+    94%{content: ' |';}
+    95.5%{content: ' |';}
+    97%{content: ' |';}
+    98.5%{content: ' |';}
+    100%{content: ' |';}
+}
+.bg-black-50{
+    background-color: #0000004d;
+}
+.icons a, .icons a i{
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+}
+/* about */
+.mb-30{
+    margin-bottom: 30px !important;
+}
+.about-img{
+    padding: 0 0 0 30px;
+}
+.about-img::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    width: 80%;
+    height: 80%;
+    background-image: url(../images/imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.fw-800{
+    font-weight: 800 !important;
+}
+.fw-900{
+    font-weight: 900 !important;
+}
+.job-title{
+    letter-spacing: 2px;
+}
+.about .decsription{
+    line-height: 1.6;
+}
+.loader{
+    -webkit-box-shadow: 0 2px 7px rgba(0,0,0,0.15) inset;
+            box-shadow: 0 2px 7px rgba(0,0,0,0.15) inset;
+    background-color: var(--lightgray);
+}
+.w-95{
+    width: 95%;
+}
+.w-80{
+    width: 80%;
+}
+.w-90{
+    width: 90%;
+}
+.bg-black{
+    background-color: var(--darkgray);
+}
+.border-black{
+    border: 1px solid var(--darkgray);
+}
+.text-black{
+    color: var(--darkgray);
+}
+.m-10{
+    padding-block: 10px;
+}
+.m-30{
+    padding-inline: 30px;
+}
+.fs-13{
+    font-size: 13px;
+}
+.buttons a:first-child button{
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.buttons a:first-child:hover button{
+    background-color: #fff;
+    border: 1px solid var(--darkgray);
+    color: var(--darkgray) !important;
+}
+.buttons a:last-child button{
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.buttons a:last-child:hover button{
+    background-color: var(--darkgray);
+    border: 1px solid var(--darkgray);
+    color: #fff !important;
+}
+/* services */
+.services{
+    background-color: var(--lightgray);
+    isolation: isolate;
+}
+.heading{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.section-head .heading::after{
+    content: "";
+    background-image: url(../images/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 30px;
+}
+.bg-gray{
+    background-color: var(--lightgray);
+}
+.bg-white{
+    background-color: #fff;
+}
+.services-card i{
+    -webkit-transition: background-color 300ms ease-in-out , 
+                color 300ms ease-in-out ;
+    -o-transition: background-color 300ms ease-in-out , 
+                color 300ms ease-in-out ;
+    transition: background-color 300ms ease-in-out , 
+                color 300ms ease-in-out ;
+}
+.services-card:hover i{
+    background-color: var(--darkgray);
+    color: #fff;
+}
+/* works */
+.w-98{
+    width: 98%;
+}
+.h-98{
+    height: 98%;
+}
+.works-card .overlay{
+    background-color: rgba(255,255,255,0.95);
+    top: 1%;
+    left: 1%;
+    opacity: 0;
+    -webkit-transition: opacity 500ms ease-in-out;
+    -o-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out;
+}
+.works-card:hover .overlay{
+    opacity: 1;
+}
+.works-card .overlay p{
+    letter-spacing: 2px;
+}
+.works-icons i{
+    width: 30px;
+    height: 30px;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.works-icons i:hover{
+    color: var(--darkgray) !important;
+    border: 1px solid var(--darkgray);
+    background-color: transparent;
+}
+.w-fit{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.nav-pills .nav-link.active{
+    background-color: transparent !important;
+    color: var(--darkgray) !important;
+}
+.works .active::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+.nav-link:focus, .nav-link:hover{
+    color: var(--darkgray);
+}
+/* clients */
+.clients{
+    background-color: var(--lightgray);
+    isolation: isolate;
+}
+.word-2{
+    word-spacing: 2px;
+}
+.mw-800{
+    max-width: 800px;
+}
+.carousel-indicators{
+    bottom: -50px !important;
+}
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    background-color: var(--gray) !important;
+}
+/* counter */
+.counter i{
+    font-size: 32px;
+}
+/* team */
+.team{
+    background-color: var(--lightgray);
+    isolation: isolate;
+}
+.team .card{
+    border-radius: 0 0 10px 10px !important;
+    overflow: hidden;
+}
+.team .card .card-body{
+    background-color: #5b5b5b;
+}
+.fs-25{
+    font-size: 25px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.team .card .overlay{
+    background-color: rgba(255,255,255,0.95);
+    top: 1%;
+    left: 1%;
+    opacity: 0;
+    -webkit-transform: rotateY(180deg) scale(0.5,0.5) ;
+            transform: rotateY(180deg) scale(0.5,0.5) ;
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.team .card:hover .overlay{
+    opacity: 1;
+    -webkit-transform: rotateY(0deg) scale(1,1) ;
+            transform: rotateY(0deg) scale(1,1) ;
+}
+.team-icons i{
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--darkgray) !important;
+    -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.team-icons i:hover{
+    background-color: transparent;
+    color: var(--darkgray) !important;
+}
+.team .card-image img{
+    -webkit-transition: scale 300ms ease-in-out;
+    -o-transition: scale 300ms ease-in-out;
+    transition: scale 300ms ease-in-out;
+}
+.team .card-image:hover img{
+    scale: 1.1;
+}
+/* contact */
+.bg-light-gray{
+    background-color: var(--lightgray);
+}
+.contact i{
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.contact .contact-card:hover i{
+    background-color: var(--darkgray);
+    color: var(--lightgray);
+}
+input, textarea{
+    border: none !important;
+}
+input:focus , textarea:focus{
+    border: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    background-color: var(--lightgray) !important;
+}
+textarea{
+    resize: both;
+    max-width: 100%;
+    max-height: 160px;
+}
+form a button{
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+form a:hover button{
+    background-color: #fff;
+    border: 1px solid var(--darkgray);
+    color: var(--darkgray) !important;
+}
+/* footer */
+footer p{
+    color: #748182;
+}
